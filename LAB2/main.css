@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Stylesheet </title>
+    <style>
+      header {
+        font-size : 15pt;
+        color : black;
+        background-color : #E6E6E6;
+      }
+      ul{
+        text-align: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        background-color: #f1f1f1;
+      }
+      li a{
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      li a:hover{
+        background-color: #555;
+        color: white;
+      }
+      h1{
+        text-align: left;
+        font-family: Helvetica,sans-serif;
+        border-left: 200px;
+      }
+      h2 {
+        text-align : left;
+        font-family: Helvetica,sans-serif;
+        border-left: 200px;
+      }
+      h3{
+        text-align: left;
+        font-family: Helvetica,sans-serif;
+        margin:19px 0 8px;
+        font-size:14px;
+        font-weight:700
+        border-left: 200px;
+      }
+      body {
+        background-color :#E6E6E6;
+      }
+
+      div  {
+        text-align : left;
+        font-size : 10pt;
+        font-family: Helvetica,sans-serif;
+        color : black;
+        text-indent :1em;
+        padding-top:10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        height: auto;
+      }
+
+
+      input{
+
+      }
+      .bir_yy{
+        width: 100px;
+        height: auto;
+      }
+      .bir_dd{
+        width: 100px;
+        height: auto;
+      }
+      select{
+        width: 100px;
+        height: auto;
+      }
+      .bir_mm{
+      }
+      button{
+        background-color: #555555;
+        color:white;
+        font-size: 12px;
+        padding:10px 24px;
+        border-radius: 8px;
+      }
+      footer{
+       background-color :#E6E6E6;
+      }
+    </style>
+
+  </head>
+
+</html>
