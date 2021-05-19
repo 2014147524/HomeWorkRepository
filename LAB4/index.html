@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Home Page </title>
+    <link rel = "stylesheet" type="text/css" href="main.css"/>
+    <script>
+      function loadItems(){
+        return fetch("products.json")
+        .then((response) =>response.json())
+        .then((json)=>json.items);
+
+      }
+      loadItems().then((items)=>{
+        displayItems(items);
+      })
+      function displayItems(products){
+        const container = document.querySelector(".items");
+        container.innerHTML = items.map((item)=>createHTMLString(item)).join("");
+      }
+      function createHTMLString(item){
+        return
+        '
+          <li class="item">
+            <img src = "${item.image}" alt = "${item.type}" />
+          </li>
+        ';
+      }
+    </script>
+
+
+</head>
+<body>
+
+  <header>
+    <div>
+        <h1> <a href="index.html" target="_blank">Home Page</a></h1>
+        <div class="animation">
+          <h3> 안녕하세요 </h3>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="login.html">로그인</a></li>
+          <li><a class="now_page" href="signup.html">회원가입</a></li>
+      </nav>
+    </div>
+  </header>
+  <div>
+    <aside>
+      <form>
+        <div>
+          <label for="category">Choose a category:</label>
+          <select id="category">
+            <option selected>All</option>
+            <option>Vegetables</option>
+            <option>Meat</option>
+            <option>Soup</option>
+          </select>
+        </div>
+        <div>
+          <label for="searchTerm">Enter search term:</label>
+          <input type="text" id="searchTerm" placeholder="e.g. HTML">
+        </div>
+        <div>
+          <button>Filter results</button>
+        </div>
+      </form>
+    </aside>
+    <main>
+
+    </main>
+  </div>
+
+
+
+  <footer>
+    <div class="footer">
+    </div>
+  </footer>
+</body>
+</html>
